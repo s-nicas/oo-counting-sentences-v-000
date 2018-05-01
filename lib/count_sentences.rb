@@ -14,9 +14,10 @@ class String
     self.end_with?('!') ? true : false 
   end
 
-  def count_sentences
-    sentence = 0
+   def count_sentences(string)
+    divide_string =string.split(/\w[.?!]\s[A-z]|\w[.?!]\s\z/)
     
-    self.include()
+    divide_string.size
+    
   end
 end
